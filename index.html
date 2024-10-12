@@ -2,13 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ronic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Header -->
+    <div class="header">
+        <a href="#" class="brand">
+            <h2>Hesam Shahmoradi</h2>
+        </a>
+        <nav class="navbar">
+            <a href="#home"><i class="fa fa-home"></i>home</a>
+            <a href="#apps"><i class="fa fa-mobile"></i>apps</a>
+            <a href="#review">review</a>
+            <a href="#contact"><i class="fa fa-phone"></i>contact</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+        <div class="icons">
+            <a class="nav-link" href="#" onclick="switchTheme()">
+                <i class="fa fa-moon dark-icon"></i>
+                <i class="fa fa-sun light-icon"></i>
+            </a>
+            <a class="nav-link" href="#">
+                <i class="fa fa-search" id="search-btn"></i>
+            </a>
+            <a class="nav-link" href="#">
+                <i class="fa fa-bars" id="menu-btn"></i>
+            </a>
+        </div>
+        <div class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fa fa-search"></label>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <script src="js/script.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 
 </html>
