@@ -1,8 +1,8 @@
 :root {
     --light-color: #212529;
-    --light-second-color: #727475;
-    --light-background: #ffffff;
-    --light-second-background: #C0EBA6;
+    --light-second-color: #f5f6fa;
+    --light-background: #80AF81;
+    --light-second-background: #508D4E;
 
     --dark-color: #909090;
     --dark-second-color: #f5f6fa;
@@ -107,7 +107,7 @@ section {
 }
 
 
-
+/* Header */
 .nav-link {
     color: var(--second-color);
     font-size: 2.5rem;
@@ -170,7 +170,7 @@ section {
     position: absolute;
     top: 115%;
     right: 7%;
-    color: var(--main-color);
+    color: var(--second-color);
     background: var(--second-bg-color);
     width: 50rem;
     height: 5rem;
@@ -190,7 +190,7 @@ section {
     height: 100%;
     width: 100%;
     font-size: 1.6rem;
-    color: var(--main-color);
+    color: var(--second-color);
     background: var(--second-bg-color);
     padding: 1rem;
     text-transform: none;
@@ -201,25 +201,71 @@ section {
     cursor: pointer;
     font-size: 2.2rem;
     margin-right: 1.5rem;
-    color: var(--main-color);
+    color: var(--second-color);
 }
 
 .header .search-form label:hover {
-    color: var(--main-color);
+    color: var(--second-color);
 }
 
 .navbar i {
     padding-right: 3px;
 }
 
+/* End Header */
+
+
+/* Home */
+.home {
+    margin-top: 11rem;
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    color: var(--second-color);
+    background: var(--second-bg-color);
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.home .row .image {
+    flex: 1 1 45rem;
+}
+
+.home .row .image img {
+    width: 70%;
+
+}
+
+.home .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-right: 3rem;
+
+}
+
+.home .row .content h3 {
+    font-size: 3rem;
+    color: var(--second-color);
+}
+
+.home .row .content p {
+    font-size: 1.6rem;
+    color: var(--second-color);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+/* End Home */
 
 
 
 
-
-
-/* media queries  */
-@media (max-width:991px) {
+/* Media Queries for responsiveness */
+@media (max-width:924px) {
 
     html {
         font-size: 55%;
@@ -236,6 +282,11 @@ section {
     .nav-link {
         margin: 5px;
     }
+
+    .home .row .content {
+        margin: 3rem 3rem;
+    }
+
 }
 
 @media (max-width:768px) {
@@ -271,11 +322,15 @@ section {
         right: 2rem;
     }
 
+    .home .row .image img {
+        width: 100%;
+    }
 
+    .home .row .content {
+        margin: 3rem 3rem;
+    }
 
 }
-
-
 
 @media (max-width:450px) {
 
@@ -284,3 +339,5 @@ section {
     }
 
 }
+
+/* End Media Queries for responsiveness */
