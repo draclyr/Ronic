@@ -120,7 +120,6 @@ section {
     transition: all 0.3s ease;
 }
 
-
 .header {
     background: var(--bg);
     display: flex;
@@ -262,6 +261,49 @@ section {
 /* End Home */
 
 
+/* Apps & Games*/
+.apps .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.apps h2 {
+    font-size: 4rem;
+    color: var(--second-color);
+    text-align: center;
+    margin: 2rem;
+}
+
+.apps .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border-radius: 20px;
+    background: var(--second-bg-color);
+}
+
+.apps .box-container .box img {
+    width: 70%;
+}
+
+.apps .box-container .box h3 {
+    color: var(--second-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.apps .box-container .box p {
+    color: var(--second-color);
+    font-size: 1.5rem;
+}
+
+.apps .box-container .box:hover {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+/* End Apps & Games*/
+
 
 
 /* Media Queries for responsiveness */
@@ -287,6 +329,11 @@ section {
         margin: 3rem 3rem;
     }
 
+    .apps .box-container .box {
+        width: 80%;
+
+        margin: 0 5rem;
+    }
 }
 
 @media (max-width:768px) {
