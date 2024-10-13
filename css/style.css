@@ -305,6 +305,63 @@ section {
 /* End Apps & Games*/
 
 
+/* Contact */
+.contact .row {
+    display: flex;
+    background: var(--second-bg-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: var(--second-color);
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--second-color);
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.contact .row form .inputBox span {
+    color: var(--second-color);
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: var(--second-color);
+    text-transform: none;
+    background: none;
+}
+
+/* End Contact */
+
 
 /* Media Queries for responsiveness */
 @media (max-width:924px) {
