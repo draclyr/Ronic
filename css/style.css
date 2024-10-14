@@ -261,6 +261,69 @@ section {
 /* End Home */
 
 
+/* Special-Posts */
+.special-posts .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.special-posts .box-container .box {
+    background: var(--second-bg-color);
+    border-radius: 20px;
+}
+
+.special-posts .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.special-posts .box-container .box .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.special-posts .box-container .box:hover .image img {
+    opacity: 0.7;
+
+}
+
+.special-posts .box-container .box .content {
+    padding: 2rem;
+}
+
+.special-posts .box-container .box .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: var(--second-color);
+
+}
+
+.special-posts .box-container .box .content .title:hover {
+    color: var(--second-color);
+}
+
+.special-posts .box-container .box .content span {
+    color: var(--second-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: var(--second-color);
+}
+
+.special-posts .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: var(--second-color);
+}
+
+/* End Special-Posts */
+
+
 /* Apps & Games*/
 .apps .box-container {
     display: grid;
