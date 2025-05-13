@@ -23,5 +23,5 @@
 </div>
 
 <div align="center">
-<p>Finally, I would be delighted if you could rate the pr❤️</p>
+<p>Finally, I would be delighted if you could rate the project❤️</p>
 </div>
